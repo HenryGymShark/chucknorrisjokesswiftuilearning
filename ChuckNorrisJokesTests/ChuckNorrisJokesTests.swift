@@ -33,4 +33,12 @@ class ChuckNorrisJokesTests: XCTestCase {
         }
     }
 
+    func testIfAPICallReturns10Results() {
+        let viewModel = JokeViewModel()
+        var testJokeArray = [JokeData]()
+        viewModel.loadData { (jokes) in
+            testJokeArray = jokes
+            XCTAssertEqual(testJokeArray.count, 10)
+        }
+    }
 }

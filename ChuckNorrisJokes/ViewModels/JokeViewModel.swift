@@ -10,7 +10,7 @@ import Foundation
 
 class JokeViewModel {
 
-    func loadData(completion:@escaping () {
+    func loadData(completion:@escaping ([JokeData]) -> ()) {
         guard let url = URL(string: "http://api.icndb.com/jokes/random/10?exclude=[explicit]") else {
             print("Your API end point is Invalid")
             return
@@ -21,7 +21,7 @@ class JokeViewModel {
             if let data = data {
                 if let response = try? JSONDecoder().decode(JokesResponse.self, from: data) {
                     DispatchQueue.main.async {
-                        self.jokes = response.value
+                        completion(response.value)
                     }
                     return
                 }
