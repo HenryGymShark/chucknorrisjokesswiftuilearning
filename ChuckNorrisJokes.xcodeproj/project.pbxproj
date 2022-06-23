@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D55667862864B27500A6E27A /* JokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55667852864B27500A6E27A /* JokeViewModel.swift */; };
 		D5FA32B32864598600838467 /* ChuckNorrisJokesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FA32B22864598600838467 /* ChuckNorrisJokesApp.swift */; };
 		D5FA32B52864598600838467 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FA32B42864598600838467 /* ContentView.swift */; };
 		D5FA32B72864598700838467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5FA32B62864598700838467 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 		D5FA32C42864598700838467 /* ChuckNorrisJokesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FA32C32864598700838467 /* ChuckNorrisJokesTests.swift */; };
 		D5FA32CE2864598700838467 /* ChuckNorrisJokesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FA32CD2864598700838467 /* ChuckNorrisJokesUITests.swift */; };
 		D5FA32D02864598700838467 /* ChuckNorrisJokesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FA32CF2864598700838467 /* ChuckNorrisJokesUITestsLaunchTests.swift */; };
+		D5FA32DE286459CF00838467 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FA32DD286459CF00838467 /* Joke.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D55667852864B27500A6E27A /* JokeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewModel.swift; sourceTree = "<group>"; };
 		D5FA32AF2864598600838467 /* ChuckNorrisJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FA32B22864598600838467 /* ChuckNorrisJokesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisJokesApp.swift; sourceTree = "<group>"; };
 		D5FA32B42864598600838467 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +47,8 @@
 		D5FA32C92864598700838467 /* ChuckNorrisJokesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChuckNorrisJokesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FA32CD2864598700838467 /* ChuckNorrisJokesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisJokesUITests.swift; sourceTree = "<group>"; };
 		D5FA32CF2864598700838467 /* ChuckNorrisJokesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisJokesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D5FA32DD286459CF00838467 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		D5FA32E228645E1F00838467 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D55667842864B25700A6E27A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D55667852864B27500A6E27A /* JokeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		D5FA32A62864598500838467 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +107,9 @@
 		D5FA32B12864598600838467 /* ChuckNorrisJokes */ = {
 			isa = PBXGroup;
 			children = (
+				D5FA32E228645E1F00838467 /* Info.plist */,
+				D55667842864B25700A6E27A /* ViewModels */,
+				D5FA32DC286459BF00838467 /* Models */,
 				D5FA32B22864598600838467 /* ChuckNorrisJokesApp.swift */,
 				D5FA32B42864598600838467 /* ContentView.swift */,
 				D5FA32B62864598700838467 /* Assets.xcassets */,
@@ -125,6 +141,14 @@
 				D5FA32CF2864598700838467 /* ChuckNorrisJokesUITestsLaunchTests.swift */,
 			);
 			path = ChuckNorrisJokesUITests;
+			sourceTree = "<group>";
+		};
+		D5FA32DC286459BF00838467 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D5FA32DD286459CF00838467 /* Joke.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +283,8 @@
 			files = (
 				D5FA32B52864598600838467 /* ContentView.swift in Sources */,
 				D5FA32B32864598600838467 /* ChuckNorrisJokesApp.swift in Sources */,
+				D5FA32DE286459CF00838467 /* Joke.swift in Sources */,
+				D55667862864B27500A6E27A /* JokeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -420,11 +446,13 @@
 				DEVELOPMENT_TEAM = S47VSD683H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChuckNorrisJokes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,11 +477,13 @@
 				DEVELOPMENT_TEAM = S47VSD683H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChuckNorrisJokes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
